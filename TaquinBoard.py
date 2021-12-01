@@ -2,7 +2,7 @@ import sys
 sys.setrecursionlimit(990000000)
 #board = [7,2,4,5,0,6,8,3,1]
 #board = [1,2,3,4,5,6,7,0,8]
-board = [2,0,3,1,5,6,4,7,8]
+board = [3,1,2,4,5,0,6,7,8]
 solution = [1,2,3,4,5,6,7,8,0]
 
 visited = []
@@ -95,7 +95,8 @@ def solveBFS(board):
 #visited: list of already visited nodes  
 # path: stack to save the solution path  
 # prof: current depth
-# maxProf: maximum depth to search within   
+# maxProf: maximum depth to search within 
+  
 def  solveLimitedDFS(board,visited,path,prof,maxProf):
     if(prof>maxProf):
         return False
@@ -137,6 +138,8 @@ visited = list()
 #solveDFS([1,2,3,4,5,0,6,7,8],visited,0)
 #solveIterDFS(board)
 solveIterDFS(board)
+
+
 
     
 
